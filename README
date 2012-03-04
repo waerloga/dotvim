@@ -1,0 +1,11 @@
+This is my .vim directory
+
+to install:
+git clone git://github.com/waerloga/dotvim.git ~/.vim
+git submodule init
+git submodule update
+ln -s .vim/vimrc .vimrc
+
+Ensure the following is installed:
+(graphical) Inconsolata font
+
