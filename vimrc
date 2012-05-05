@@ -24,7 +24,7 @@ set fileencoding=utf8
 colorscheme xoria256
 if has("gui_running")
 	if has('win32') || has('win64')
-		set guifont Consolas:h10
+		set guifont=Consolas:h10
 	else
 		set guifont=Inconsolata\ Medium\ 10
 	endif
