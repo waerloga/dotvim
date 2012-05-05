@@ -39,7 +39,8 @@ set ttymouse=xterm
 set mouse=a
 set backspace=2
 if has('win32') || has('win64')
+  set directory=$TMP,.
 else
-	set backupdir=~/.vim/.vimtemp,.
-	set directory=~/.vim/.vimtemp,.
+	set backupdir=~/.vim/vimtemp,.
+	set directory=~/.vim/vimtemp,.
 endif
