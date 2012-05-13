@@ -1,26 +1,46 @@
+" Load the pathogen script
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+" Auto load all the extensions
 call pathogen#infect()
 
+" Turn off vi compatibility
 set nocompatible
+
+" syntax highlighting on
 syntax on
 
 set background=dark
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
+" no line wrap
 set nowrap
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
-set expandtab
+
+" Set tabs to 4 spaces
+" Commented out tabs -> spaces conversions for SS guidelines
+" set shiftwidth=4
+" set softtabstop=4
+set tabstop=4
+" set expandtab
+
+" show 'invisible' characters
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set list
+" line numbering on
 set number
+" always show status line, and configure status line
 set laststatus=2
 set statusline=%F%m%r%h%w[%L][%{&ff}][%{strlen(&fenc)?&fenc:&enc}]%y[%p%%][%04l,%04v]
+" highlight the current line
 set cursorline
+" show matching bracket/paren/etc
 set showmatch
+" auto idnent
 set autoindent
+" utf8 as default 
 set encoding=utf8
 set fileencoding=utf8
+" color scheme xoria256 for console
 colorscheme xoria256
 if has("gui_running")
 	if has('win32') || has('win64')
@@ -39,8 +59,9 @@ set ttymouse=xterm
 set mouse=a
 set backspace=2
 if has('win32') || has('win64')
-  set directory=$TMP,.
+  set backupdir=$HOME/vimfiles/vimtemp,$TMP,.
+  set directory=$HOME/vimfiles/vimtemp,$TMP,.
 else
-	set backupdir=~/.vim/vimtemp,.
-	set directory=~/.vim/vimtemp,.
+	set backupdir=$HOME/.vim/vimtemp,.
+	set directory=$HOME/.vim/vimtemp,.
 endif
