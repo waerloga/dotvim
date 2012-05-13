@@ -6,6 +6,11 @@ call pathogen#infect()
 " Turn off vi compatibility
 set nocompatible
 
+" utf8 as default 
+set encoding=utf8
+set fileencoding=utf8
+
+
 " syntax highlighting on
 syntax on
 
@@ -25,6 +30,7 @@ set tabstop=4
 
 " show 'invisible' characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 "set list
 " line numbering on
 set number
@@ -37,9 +43,6 @@ set cursorline
 set showmatch
 " auto idnent
 set autoindent
-" utf8 as default 
-set encoding=utf8
-set fileencoding=utf8
 " color scheme xoria256 for console
 colorscheme xoria256
 if has("gui_running")
