@@ -10,7 +10,6 @@ set nocompatible
 set encoding=utf8
 set fileencoding=utf8
 
-
 " syntax highlighting on
 syntax on
 
@@ -23,7 +22,7 @@ set nowrap
 
 " Set tabs to 4 spaces
 " Commented out tabs -> spaces conversions for SS guidelines
-" set shiftwidth=4
+set shiftwidth=4
 " set softtabstop=4
 set tabstop=4
 " set expandtab
@@ -31,7 +30,7 @@ set tabstop=4
 " show 'invisible' characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-"set list
+set list
 " line numbering on
 set number
 " always show status line, and configure status line
