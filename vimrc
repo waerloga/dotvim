@@ -21,11 +21,10 @@ set omnifunc=syntaxcomplete#Complete
 set nowrap
 
 " Set tabs to 4 spaces
-" Commented out tabs -> spaces conversions for SS guidelines
 set shiftwidth=4
-" set softtabstop=4
+set softtabstop=4
 set tabstop=4
-" set expandtab
+set expandtab
 
 " show 'invisible' characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
