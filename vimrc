@@ -41,15 +41,14 @@ set cursorline
 set showmatch
 " auto idnent
 set autoindent
-" color scheme xoria256 for console
-colorscheme xoria256
+" colorscheme solarized
+colorscheme solarized
 if has("gui_running")
 	if has('win32') || has('win64')
 		set guifont=Consolas:h10
 	else
 		set guifont=Inconsolata\ Medium\ 10
 	endif
-	colorscheme moria
 	set guioptions-=T
 	set guioptions-=m
 	set guioptions-=r

@@ -2,10 +2,13 @@ This is my .vim directory
 
 to install:
 git clone git://github.com/waerloga/dotvim.git ~/.vim
+cd .vim
 git submodule init
 git submodule update
+cd ../
 ln -s .vim/vimrc .vimrc
 
 Ensure the following is installed:
-(graphical) Inconsolata font
+(graphical *nix) Inconsolata font
+or Consolas for windows
 
