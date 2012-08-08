@@ -24,10 +24,10 @@ set nowrap
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set expandtab
+" back to tabs
+"set expandtab
 
 " show 'invisible' characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
 " line numbering on
