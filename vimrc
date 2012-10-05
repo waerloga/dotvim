@@ -20,12 +20,11 @@ set omnifunc=syntaxcomplete#Complete
 " no line wrap
 set nowrap
 
-" Set tabs to 4 spaces
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-" back to tabs
-"set expandtab
+" Set tabs to 2 spaces
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
 
 " show 'invisible' characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -41,6 +40,8 @@ set cursorline
 set showmatch
 " auto idnent
 set autoindent
+" spell check on
+set spell
 " colorscheme solarized
 colorscheme solarized
 if has("gui_running")

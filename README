@@ -9,6 +9,9 @@ cd ../
 ln -s .vim/vimrc .vimrc
 
 Ensure the following is installed:
-(graphical *nix) Inconsolata font
-or Consolas for windows
+For *nix:
+(graphical) Inconsolata font
 
+For Windows
+(graphical) Consolas
+cURL curl.haxx.se
