@@ -1,5 +1,8 @@
 " Load the pathogen script
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+" To disable a plugin, add to the following list via
+" 'call add(g:pathogen_disabled, '<name>')
+let g:pathogen_disabled = []
 " Auto load all the extensions
 call pathogen#infect()
 
@@ -15,7 +18,10 @@ syntax on
 
 set background=dark
 filetype plugin indent on
-set omnifunc=syntaxcomplete#Complete
+
+" Syntax completion stuff
+"set omnifunc=syntaxcomplete#Complete
+" let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 " no line wrap
 set nowrap
@@ -55,9 +61,10 @@ if has("gui_running")
 	set guioptions-=r
 endif
 
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+" Mouse
 set ttymouse=xterm
 set mouse=a
+
 set backspace=2
 if has('win32') || has('win64')
   set backupdir=$HOME/vimfiles/vimtemp,$TMP,.
